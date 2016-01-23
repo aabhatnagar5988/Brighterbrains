@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="brighterbrains.com.brighterbrains" >
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:backupAgent="BackupAgent"
+        android:theme="@style/AppTheme" >
+
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIjBaU4w0Bls0I_s_ayKzlkj_H8GmVj-v1W93x5A" />
+
+        <activity
+            android:name="brighterbrains.com.brighterbrains.RecordsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="brighterbrains.com.brighterbrains.AddRecordsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+
+    </application>
+
+</manifest>
